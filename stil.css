@@ -1,0 +1,39 @@
+
+h1,h2{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+p{
+    color: blue;
+    font-size: 14px;
+}
+
+ul{
+    list-style-type:square;
+}
+
+li{
+    color: blue;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+dd{
+    color: blue;
+    font-size: 14px;
+}
+
+dt{
+    color: blue;
+    font-size: 14px;
+}
+
+#liste{
+    background-image: url(resimler/bayrak.png);
+    background-size: 125px;
+    background-position: left;
+    width: 80px;
+    height: 60px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{color: blueviolet;}
+            input[type="text"],input[type="email"],textarea{
+                border-color: darkmagenta;
+                margin: 5px;
+                color: darkcyan;
+            }
+            input{
+                border-color: darkmagenta;
+                margin: 5px;
+                color: darkcyan;
+            }
+
+            .formeleman{
+                border-color: darkorchid;
+                background-color:black;
+                color:darkcyan;
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-width: 4px;
+                border-style: dotted;
+                padding: 10px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+         <!--required o kutucuğun doldurulmasını zorunlu yapar.-->
+        <form name="kayit" action="kayit.php" method="get" autocomplete="on">
+            <table>
+                <tr><td>Ad Soyad:</td><td><input class="formeleman" type="text" name="adsoyad" id="adsoyad" size="20" maxlength="30" required autofocus placeholder="Ad Soyad"></td></tr>
+                <tr><td>Parola</td><td><input class="formeleman" type="password" name="sifre" id="sifre" required placeholder="Şifre"></td></tr>
+                <tr><td>Email:</td><td><input class="formeleman" type="email" name="email" id="email"  required placeholder="Email"></td></tr>
+                <tr><td>Yaş:</td><td><input class="formeleman" type="number" name="yas" id="yas" required placeholder="Yaş"></td></tr>
+                <tr><td>Website:</td><td><input class="formeleman" type="url" name="website" id="website" placeholder="Website (zorunlu değil)"></td></tr>
+                <tr><td>Burayı Boşver:</td><td><input class="formeleman" type="text" disabled></td></tr>
+                <tr><td>Öneri:</td><td><textarea class="formeleman" name="oneri" id="oneri" cols="20" rows="5" placeholder="Öneri (zorunlu değil)" maxlength="100"></textarea></td></tr>
+                <tr><td></td><td><input class="formeleman" type="submit" value="Gönder"><input class="formeleman" type="reset" value="Temizle"></td></tr>
+            </table>
+        </form>
+
+        <br><br><br><br><br>
+
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="kayit.php" method="get" autocomplete="on">
+            <table>
+                <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" id="adsoyad" size="20" maxlength="30" required autofocus placeholder="Ad Soyad"></td></tr>
+                <tr><td>Parola</td><td><input type="password" name="sifre" id="sifre" required placeholder="Şifre"></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="email" id="email"  required placeholder="Email"></td></tr>
+                <tr><td>Yaş:</td><td><input type="number" name="yas" id="yas" required placeholder="Yaş"></td></tr>
+                <tr><td>Website:</td><td><input type="url" name="website" id="website" placeholder="Website (zorunlu değil)"></td></tr>
+                <tr><td>Burayı Boşver:</td><td><input type="text" disabled></td></tr>
+                <tr><td>Öneri:</td><td><textarea name="oneri" id="oneri" cols="20" rows="5" placeholder="Öneri (zorunlu değil)" maxlength="100"></textarea></td></tr>
+                <tr><td colspan="2"><input type="checkbox" name="sozlesme" id="sozlesme" required>Kullanım sözleşmesini kabul ediyorum</td></tr>
+                <tr><td colspan="2"><input type="submit" value="Gönder"><input type="reset" value="Temizle"></td></tr>
+            </table>
+        </form>
+        <br> <br> <br> <br> <br>
+        <h1>Nasılsın?</h1>
+        <form name="secenek">
+            <input type="radio" name="nasilsin" id="nasilsin" value="İyi">İyi
+            <input type="radio" name="nasilsin" id="nasilsin" value="Kötü">Kötü
+            <input type="radio" name="nasilsin" id="nasilsin" value="ehiste">Eh işte
+            <br> <br>
+            <input type="image" src="resimler/bayrak.png" alt="Onayla" width="50">
+        </form>
+        <br> <br> <br> <br> <br>
+        <h1>Doğum yeri</h1>
+        <form>
+            <select name="dyeri" id="dyeri">
+                <option selected disabled value="Bos">Doğum yeri seçin</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="izmir">İzmir</option>
+                <option value="ankara">Ankara</option>
+                <option value="sakarya">Sakarya</option>
+                <option value="giresun">Giresun</option>
+                <input type="submit" value="Onayla">
+            </select>
+        </form>
+    </body>
+</html>

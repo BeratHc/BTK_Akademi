@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                border-style: solid;
+                width: 100px;
+                height: 85px;
+                margin: 30px 200px 30px 200px;
+                padding: 10px 20px 0px 25px;
+            }
+            body{
+                background-color:yellowgreen;
+                background-image: url(resimler/bayrak.png);
+                background-size: 200px;
+                background-repeat:round;
+                background-attachment:scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Video Oynat</h1>
+        <video src="video/videonunismi.mp4" controls loop autoplay muted preload width="500">
+           <!--controls videoyu durdurma ses yükseltme gibi şeylerin olmasını sağlar
+            loop videonun sürekli oynamasını sağlar
+            preload videonun oynata basmadan indirilmesini sağlar yani ne kadar yüklendiğini gösteren bar daha önden başlar
+            muted videonun sesi kısılmış halde başlamasını sağlar autoplay googleda bu varken çalışır--> 
+        </video>
+        <h1>Ses Dosyası</h1>
+        <audio src="muzik/muziginismi.mp3" controls>
+            <!--videodaki özellikleri ses doyasında da kullanabilirsin--></audio>
+    </body>
+</html>
